@@ -1866,8 +1866,8 @@ awful.button({ }, 3, function (t)
   customization.func.tag_action_menu(t)
 end),
 awful.button({ modkey }, 3, awful.tag.delete),
-awful.button({ }, 4, function(t) awful.tag.viewprev(awful.tag.getscreen(t)) end),
-awful.button({ }, 5, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end)
+awful.button({ }, 4, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end),
+awful.button({ }, 5, function(t) awful.tag.viewprev(awful.tag.getscreen(t)) end)
 )
 
 customization.widgets.tasklist = {}
