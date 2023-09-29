@@ -2406,9 +2406,9 @@ awful.key({modkey, "Shift"}, "r", customization.func.tag_rename),
 
 --- view
 
-uniarg:key_repeat({modkey,}, "p", customization.func.tag_view_prev),
+--uniarg:key_repeat({modkey,}, "p", customization.func.tag_view_prev),
 
-uniarg:key_repeat({modkey,}, "n", customization.func.tag_view_next),
+--uniarg:key_repeat({modkey,}, "n", customization.func.tag_view_next),
 
 awful.key({modkey,}, "z", customization.func.tag_last),
 
@@ -2490,7 +2490,7 @@ awful.key({ modkey, }, "Insert", customization.func.system_reboot),
 
 awful.key({ modkey, }, "Delete", customization.func.system_power_off),
 
-awful.key({ modkey, }, "/", customization.func.app_finder),
+awful.key({ modkey, }, "p", customization.func.app_finder),
 
 --- everyday
 
