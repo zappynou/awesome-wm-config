@@ -2260,6 +2260,12 @@ uniarg:key_repeat({ modkey,           }, "space", function () awful.layout.inc(l
 
 uniarg:key_repeat({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
+-- change current tag
+
+awful.key({ modkey,           }, "Left",   awful.tag.viewprev),
+
+awful.key({ modkey,           }, "Right",  awful.tag.viewnext),
+
 --- multiple screens/multi-head/RANDR
 
 uniarg:key_repeat({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end),
@@ -2733,16 +2739,6 @@ awful.key({ "Mod1",   }, "F4", customization.func.client_kill),
 awful.key({ modkey,           }, "f", customization.func.client_fullscreen),
 
 awful.key({ modkey,           }, "m", customization.func.client_maximize),
-
--- move client to sides, i.e., sidelining
-
-awful.key({ modkey,           }, "Left", customization.func.client_sideline_left),
-
-awful.key({ modkey,           }, "Right", customization.func.client_sideline_right),
-
-awful.key({ modkey,           }, "Up", customization.func.client_sideline_top),
-
-awful.key({ modkey,           }, "Down", customization.func.client_sideline_bottom),
 
 -- extend client sides
 
