@@ -273,7 +273,7 @@ end
 
 --{{
 local tools = {
-    terminal = "kitty",
+    terminal = "terminator",
     system = {
         filemanager = {
         },
